@@ -11,7 +11,7 @@
     <li> Установите несколько пакетов с расширением sudo apt-get install jq sysstat bc smartmontools fdisk -y.</li>
     <li> Установите пакеты с помощью <code>sudo apt-get install jq sysstat bc smartmontools fdisk -y</code>.</li>
     <li> Запустите bash cosmos.sh, чтобы проверить настройки. Если так то все Вы настроили верно - Нормальный вывод:
-<code>root@duckduckduck:~/status# bash cosmos.sh
+<code> root@duckduckduck:~/status# bash cosmos.sh
 
 exp/me >>>>>> 247490/247490.
 
@@ -35,10 +35,10 @@ _time_left >> 11h 28m.
 
 _appr_time >> Oct 9, 16:36.
 
-root@duckduckduck:~/status#</code>
+root@duckduckduck:~/status# </code>
   <li>Добавьте несколько правил с помощью <code>chmod u+x $HOME/status/cosmos.sh</code>.</li>
   <li>Отредактируйте crontab с помощью <code>crontab -e</code>.
-    <p>1,11,21,31,41,51 * * * * bash $HOME/status/cosmos.sh >> $HOME/status/cosmos.log 2>&1</p>
+    <p><code>1,11,21,31,41,51 * * * * bash $HOME/status/cosmos.sh >> $HOME/status/cosmos.log 2>&1</p></code>
   <li>Проверьте свои журналы с помощью <code>cat $HOME/status/cosmos.logили tail $HOME/status/cosmos.log -f</code></li>.
   </ol>
 
